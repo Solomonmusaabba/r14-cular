@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import PreNav from "./Items/PreNav.js";
+import NavBar from "./Items/Navbar.js";
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from "./Items/Home.js";
+// import { ReactDOM } from 'react'
+import './App.css'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PreNav />
+      <NavBar />
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
